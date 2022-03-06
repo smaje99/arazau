@@ -7,3 +7,69 @@
     font-family: Roboto;
     src: url('./assets/fonts/Roboto-Regular.ttf');
 }
+
+:root {
+    --dracula-orchid: #2d3436;
+    --green: #beb754;
+    --brown-green: #7e6c38;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    place-content: baseline space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    top: 0;
+    z-index: 10;
+    position: sticky;
+    background-color: transparent;
+}
+
+.navbar__brand {
+    color: var(--dracula-orchid);
+    font: 500 24pt Monalisa;
+    letter-spacing: 0.045em;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar__nav {
+    display: flex;
+    place-content: center space-between;
+    align-items: center;
+    gap: 4rem;
+    margin-right: .4rem;
+    list-style-type: none;
+}
+
+.navbar__nav--item {
+    padding-bottom: 1.2rem;
+}
+
+.navbar__nav--item:not(:last-child):hover {
+    border-bottom: 1px solid var(--brown-green);
+}
+
+.navbar__link {
+    display: inline-block;
+    color: var(--dracula-orchid);
+    font: 600 12pt Roboto;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.045em;
+    transition: all .3s ease 0s;
+}
+
+.navbar--login {
+    color: var(--dracula-orchid);
+    background-color: var(--green);
+    padding: .8rem;
+    border-radius: 2rem;
+}
