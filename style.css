@@ -258,7 +258,7 @@ body::-webkit-scrollbar-track {
 }
 
 .who--title {
-    font: 500 16pt Roboto;
+    font: 500 20pt Roboto;
     text-shadow: 0 4px 4px rgba(0, 0, 0, .5);
 }
 
@@ -267,4 +267,13 @@ body::-webkit-scrollbar-track {
     line-height: 4rem;
     text-align: justify;
     letter-spacing: 0.045em;
+}
+
+.who__section {
+    height: 100vh;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
