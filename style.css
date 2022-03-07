@@ -14,6 +14,8 @@
     --brown-green: #7e6c38;
     --araza-yellow: #d7b85f;
     --oragenville: #e17055;
+    --city-lights: #dfe6e9;
+    --araza--brown: #bea254;
 }
 
 html {
@@ -31,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-    background-color: var(--araza-yellow);
+    background-color: var(--araza--brown);
 }
 
 .link {
@@ -103,6 +105,7 @@ body::-webkit-scrollbar-track {
 
 .header {
     height: 100vh;
+    position: sticky;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,6 +138,7 @@ body::-webkit-scrollbar-track {
 }
 
 .footer {
+    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,4 +172,85 @@ body::-webkit-scrollbar-track {
 .contact__link {
     color: var(--brown-green);
     font-size: 23pt;
+}
+
+.main {
+    background-color: var(--city-lights);
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 8rem 20vh;
+}
+
+.main__title {
+    color: var(--dracula-orchid);
+    font: 600 18pt Roboto;
+}
+
+.products {
+    display: grid;
+    grid-gap: 3.2rem 2.4rem;
+    grid-auto-rows: 36rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-auto-flow: dense;
+}
+
+.card {
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .25);
+    background: var(--green);
+    transition: all 800ms ease;
+}
+
+.card:hover {
+    box-shadow: 8px 15px 30px rgba(0, 0, 0, .5);
+    transform: translateY(-4%);
+}
+
+.card__img {
+    width: 100%;
+    height: 16rem;
+    object-fit: fill;
+    border-radius: 2rem;
+    filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.5));
+}
+
+.card__content {
+    padding: .4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: column;
+}
+
+.card__title {
+    font: 500 14pt Roboto;
+}
+
+.card__description {
+    font: 300 10pt Roboto;
+    text-align: center;
+}
+
+.card__btn {
+    align-self: end;
+    display: inline-block;
+    font: 700 12pt Roboto;
+    letter-spacing: 0.045em;
+    padding: .8rem 2rem;
+    background-color: var(--oragenville);
+    color: var(--city-lights);
+    border-radius: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .25);
+}
+
+.card__btn:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .5);
 }
