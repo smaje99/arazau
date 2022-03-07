@@ -256,3 +256,15 @@ body::-webkit-scrollbar-track {
 .card__btn:hover {
     box-shadow: 0 2px 12px rgba(0, 0, 0, .5);
 }
+
+.who--title {
+    font: 500 16pt Roboto;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .5);
+}
+
+.who--description {
+    font: 500 12pt Roboto;
+    line-height: 4rem;
+    text-align: justify;
+    letter-spacing: 0.045em;
+}
