@@ -41,16 +41,15 @@ body::-webkit-scrollbar-track {
 }
 
 .navbar {
-    width: 97vw;
+    width: 100%;
     display: flex;
-    place-content: baseline space-between;
+    place-content: baseline space-around;
     align-items: center;
     flex-flow: row nowrap;
-    margin: 0 2rem;
     top: 0;
     z-index: 10;
     position: fixed;
-    background-color: transparent;
+    background-color: var(--araza-yellow);
 }
 
 .navbar__brand {
@@ -97,9 +96,9 @@ body::-webkit-scrollbar-track {
 }
 
 .navbar--login {
-    color: var(--dracula-orchid);
+    color: var(--city-lights);
     background-color: var(--oragenville);
-    padding: .8rem;
+    padding: .8rem 2rem;
     border-radius: 2rem;
 }
 
