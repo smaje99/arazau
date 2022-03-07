@@ -26,7 +26,7 @@ html {
 }
 
 .navbar {
-    width: 98vw;
+    width: 97vw;
     display: flex;
     place-content: baseline space-between;
     align-items: center;
@@ -78,7 +78,6 @@ html {
 }
 
 .header {
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -109,4 +108,40 @@ html {
     letter-spacing: 0.045em;
     padding: 1.6rem 4rem;
     border-top: 1px solid var(--brown-green);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 12rem 0;
+    background-color: var(--araza-yellow);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact__text {
+    color: var(--dracula-orchid);
+    font: 500 28pt Monalisa;
+    letter-spacing: 0.045em;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact__link {
+    color: var(--brown-green);
+    font-size: 23pt;
 }
