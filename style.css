@@ -233,6 +233,7 @@ body::-webkit-scrollbar-track {
 
 .card__title {
     font: 500 14pt Roboto;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .5);
 }
 
 .card__description {
