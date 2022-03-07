@@ -67,11 +67,22 @@ body::-webkit-scrollbar-track {
 }
 
 .navbar__nav--item {
-    padding-bottom: 1.2rem;
+    position: relative;
 }
 
-.navbar__nav--item:not(:last-child):hover {
-    border-bottom: 1px solid var(--brown-green);
+.navbar__nav--item:not(:last-child)::before {
+    content: '';
+    height: .3rem;
+    width: 0;
+    background-color: var(--brown-green);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar__nav--item:not(:last-child):hover::before {
+    width: 100%;
 }
 
 .navbar__link {
